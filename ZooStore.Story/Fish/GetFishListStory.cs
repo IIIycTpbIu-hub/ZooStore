@@ -13,7 +13,7 @@ namespace ZooStore.Story.Fish
 
         public Task<List<FishEntity>> ExecuteAsync(GetFishListStoryContext context)
         {
-            throw new NotImplementedException();
+            _repository.Get<FishEntity>()
         }
     }
 }
