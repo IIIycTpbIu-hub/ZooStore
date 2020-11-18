@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooStore.Domain.Entities
 {
-    public class Animal
+    public class Fish : AnimalBase
     {
     }
 }
