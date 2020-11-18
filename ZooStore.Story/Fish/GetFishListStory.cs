@@ -1,19 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using ZooStore.Domain.Entities;
+using ZooStore.DataAccess;
+using System.Collections.Generic;
 
 namespace ZooStore.Story.Fish
 {
-    class GetFishListStory : IStory<GetFishListStoryContext, FishEntity>
+    class GetFishListStory : IStory<GetFishListStoryContext, List<FishEntity>>
     {
-        public FishEntity Execute(GetFishListStoryContext context)
-        {
-            throw new NotImplementedException();
-        }
+        IRepository<FishEntity> _repository;
+        public List<FishEntity> Execute(GetFishListStoryContext context) => ExecuteAsync(context).GetAwaiter().GetResult();
 
-        public Task<FishEntity> ExecuteAsync(GetFishListStoryContext context)
+        public Task<List<FishEntity>> ExecuteAsync(GetFishListStoryContext context)
         {
             throw new NotImplementedException();
         }

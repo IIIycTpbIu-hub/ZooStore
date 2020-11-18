@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/qK38ZAA5vpHqCIk76PiiWl48fmqgzXiXwqvglpclCGcwRF2gmSn1tNawY9QJ56SeoG58NCHlCK+g/iBEFydkw==",
+  "dgSpecHash": "jaukitYbypvkmpU4TVvWBxl3fhjBnPM+679qeO844yzEhghpPf4Qw926CyfWYJbLb8QRB527xoBWGGjMEwjXqA==",
   "success": true,
-  "projectFilePath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStoreDataAccess.csproj",
+  "projectFilePath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

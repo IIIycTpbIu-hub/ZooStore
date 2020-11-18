@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ZooStore.Domain\ZooStore.Domain.csproj" />
+    <ProjectReference Include="..\ZooStoreDataAccess\ZooStore.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStoreDataAccess.csproj": {}
+    "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStoreDataAccess.csproj": {
+    "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStoreDataAccess.csproj",
+        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj",
         "projectName": "ZooStore.DataAccess",
-        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStoreDataAccess.csproj",
+        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
         "outputPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\obj\\",
         "projectStyle": "PackageReference",

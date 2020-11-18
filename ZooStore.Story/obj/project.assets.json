@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "ZooStore.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ZooStore.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ZooStore.DataAccess.dll": {}
+        }
+      },
       "ZooStore.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -15,6 +25,11 @@
     }
   },
   "libraries": {
+    "ZooStore.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../ZooStoreDataAccess/ZooStore.DataAccess.csproj",
+      "msbuildProject": "../ZooStoreDataAccess/ZooStore.DataAccess.csproj"
+    },
     "ZooStore.Domain/1.0.0": {
       "type": "project",
       "path": "../ZooStore.Domain/ZooStore.Domain.csproj",
@@ -23,6 +38,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "ZooStore.DataAccess >= 1.0.0",
       "ZooStore.Domain >= 1.0.0"
     ]
   },
@@ -54,6 +70,9 @@
           "projectReferences": {
             "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
               "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj"
+            },
+            "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
+              "projectPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj"
             }
           }
         }
