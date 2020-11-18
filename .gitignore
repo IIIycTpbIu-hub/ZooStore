@@ -5,3 +5,6 @@ ZooStore.WebApp/obj/Debug
 .vs
 ZooStoreDataAccess/obj/Debug
 ZooStore.WebApp/bin/Debug
+ZooStore.Domain/bin/Debug
+ZooStore.Domain/obj/Debug
+ZooStoreDataAccess/bin/Debug

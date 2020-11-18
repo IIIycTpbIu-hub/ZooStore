@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Andrew\\.nuget\\packages\\": {}
+    "C:\\Users\\razan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
+      "projectUniqueName": "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
       "projectName": "ZooStore.Domain",
-      "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
-      "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-      "outputPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\obj\\",
+      "projectPath": "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
+      "packagesPath": "C:\\Users\\razan\\.nuget\\packages\\",
+      "outputPath": "D:\\Progects\\ZooStore\\ZooStore.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\razan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -8,12 +8,11 @@ namespace ZooStore.Story.Fish
 {
     class GetFishListStory : IStory<GetFishListStoryContext, List<FishEntity>>
     {
-        IRepository<FishEntity> _repository;
-        public List<FishEntity> Execute(GetFishListStoryContext context) => ExecuteAsync(context).GetAwaiter().GetResult();
-
-        public Task<List<FishEntity>> ExecuteAsync(GetFishListStoryContext context)
+        IRepository _repository;
+        public List<FishEntity> Execute(GetFishListStoryContext context) 
         {
-            _repository.Get<FishEntity>()
+            _repository.Get<FishEntity>();
         }
+
     }
 }

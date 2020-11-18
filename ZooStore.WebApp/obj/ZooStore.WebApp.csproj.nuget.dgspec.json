@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj": {}
+    "D:\\Progects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj": {
+    "D:\\Progects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj",
+        "projectUniqueName": "D:\\Progects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj",
         "projectName": "ZooStore.WebApp",
-        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj",
-        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-        "outputPath": "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\obj\\",
+        "projectPath": "D:\\Progects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj",
+        "packagesPath": "C:\\Users\\razan\\.nuget\\packages\\",
+        "outputPath": "D:\\Progects\\ZooStore\\ZooStore.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\razan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,12 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.AspNetCore.Mvc": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

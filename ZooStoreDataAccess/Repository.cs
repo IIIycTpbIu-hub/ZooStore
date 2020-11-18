@@ -1,33 +1,37 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using ZooStore.Domain.Entities;
 
 namespace ZooStore.DataAccess
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository : IRepository
     {
-        public Dictionary<Type, List<T>> Data;
+        ZooStoreContext _context;
 
-        public void Add(T data)
+        public Repository()
         {
-            Type t = data.GetType();
-            List<T> list;
-            if (!Data.ContainsKey(t))
-            {
-                list = new List<T>();
-                list.Add(data);
-                Data.Add(t, list);
-            }
-            else
-            {
-                list = Data[t];
-                list.Add(data);
-            }
+            var options = new DbContextOptionsBuilder<ZooStoreContext>().UseInMemoryDatabase(databaseName: "ZooStore").Options;
+            _context = new ZooStoreContext(options);
         }
 
-        public List<T> Get<TKey>(TKey key)
+        public List<object> Get<TKey>(TKey key)
         {
-            return Data[key.GetType()];
+            List<object> result = new List<object>();
+            switch (key)
+            {
+                case FishEntity f:
+                    var fishList = _context.Fish.ToListAsync().Result;
+                    foreach (var fish in fishList)
+                    {
+                        result.Add(fish);
+                    }
+                    break;
+                default:
+                    throw new InvalidOperationException();
+            }
+            return result;
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj": {}
+    "D:\\Progects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj": {}
   },
   "projects": {
-    "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
+    "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
+        "projectUniqueName": "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
         "projectName": "ZooStore.Domain",
-        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
-        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-        "outputPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\obj\\",
+        "projectPath": "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\razan\\.nuget\\packages\\",
+        "outputPath": "D:\\Progects\\ZooStore\\ZooStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\razan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,17 +56,17 @@
         }
       }
     },
-    "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj": {
+    "D:\\Progects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
+        "projectUniqueName": "D:\\Progects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
         "projectName": "ZooStore.Story",
-        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
-        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-        "outputPath": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\obj\\",
+        "projectPath": "D:\\Progects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
+        "packagesPath": "C:\\Users\\razan\\.nuget\\packages\\",
+        "outputPath": "D:\\Progects\\ZooStore\\ZooStore.Story\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\razan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,11 +79,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
-                "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj"
+              "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
+                "projectPath": "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj"
               },
-              "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
-                "projectPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj"
+              "D:\\Progects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
+                "projectPath": "D:\\Progects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj"
               }
             }
           }
@@ -115,17 +115,17 @@
         }
       }
     },
-    "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
+    "D:\\Progects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj",
+        "projectUniqueName": "D:\\Progects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj",
         "projectName": "ZooStore.DataAccess",
-        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-        "outputPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\obj\\",
+        "projectPath": "D:\\Progects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\razan\\.nuget\\packages\\",
+        "outputPath": "D:\\Progects\\ZooStore\\ZooStoreDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\razan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -137,7 +137,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
+                "projectPath": "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -148,6 +152,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

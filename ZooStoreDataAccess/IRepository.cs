@@ -5,9 +5,8 @@ using System.Text;
 
 namespace ZooStore.DataAccess
 {
-    public interface IRepository<T>
+    public interface IRepository
     {
-        public void Add(T data);
-        public List<T> Get<TKey>(TKey key);
+        public List<object> Get<TKey>(TKey key);
     }
 }

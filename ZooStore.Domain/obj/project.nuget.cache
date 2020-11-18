@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SKSniOKri7ks81yUnsTbofdnQI1+Xtu7gshcsmNgvlFQTcXlC0GvMv4S6/BznrXh43qDhoF5ANTZbuvQSCr4lg==",
+  "dgSpecHash": "Uyfs5ATKoQkDBlRHviWhekuiAJYjAAfKwvMv705QP035N0QzpH4V67Kf2InS/dNI5XuuQ7f2DzJF/SGLqXF7xw==",
   "success": true,
-  "projectFilePath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
+  "projectFilePath": "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
