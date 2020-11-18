@@ -11,7 +11,7 @@ namespace ZooStore.Domain.Entities
         Large
     }
 
-    public class Parrot : AnimalBase
+    public class ParrotEntity : AnimalBase
     {
         public double Wingspan { get; set; }
         public bool Speaking { get; set; }
