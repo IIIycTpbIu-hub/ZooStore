@@ -11,7 +11,6 @@ namespace ZooStore.WebApp
     {
         public static void Config(this IServiceCollection services)
         {
-            services.AddMvc();
             services.AddTransient<IRepository, Repository>();
             services.AddTransient<IStory<GetFishListStoryContext, IEnumerable<AnimalBase>>, GetFishListStory>();
         }
