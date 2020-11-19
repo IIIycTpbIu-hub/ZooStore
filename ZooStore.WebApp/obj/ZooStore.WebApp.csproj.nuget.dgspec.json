@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Progects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj": {}
+    "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj": {}
   },
   "projects": {
-    "D:\\Progects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj": {
+    "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj",
-        "projectName": "ZooStore.WebApp",
-        "projectPath": "D:\\Progects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj",
-        "packagesPath": "C:\\Users\\razan\\.nuget\\packages\\",
-        "outputPath": "D:\\Progects\\ZooStore\\ZooStore.WebApp\\obj\\",
+        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
+        "projectName": "ZooStore.Domain",
+        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\razan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +37,196 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
+        "projectName": "ZooStore.Story",
+        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
+                "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj"
+              },
+              "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
+                "projectPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj",
+        "projectName": "ZooStore.WebApp",
+        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\ZooStore.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\MyProgects\\ZooStore\\ZooStore.WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj": {
+                "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj"
+              },
+              "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
+                "projectPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj",
+        "projectName": "ZooStore.DataAccess",
+        "projectPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
+                "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

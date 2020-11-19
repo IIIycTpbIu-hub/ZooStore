@@ -590,19 +590,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\razan\\.nuget\\packages\\": {}
+    "C:\\Users\\Andrew\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Progects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
+      "projectUniqueName": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
       "projectName": "ZooStore.Story",
-      "projectPath": "D:\\Progects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
-      "packagesPath": "C:\\Users\\razan\\.nuget\\packages\\",
-      "outputPath": "D:\\Progects\\ZooStore\\ZooStore.Story\\obj\\",
+      "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\ZooStore.Story.csproj",
+      "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+      "outputPath": "C:\\MyProgects\\ZooStore\\ZooStore.Story\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\razan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -615,11 +615,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
-              "projectPath": "D:\\Progects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj"
+            "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj": {
+              "projectPath": "C:\\MyProgects\\ZooStore\\ZooStore.Domain\\ZooStore.Domain.csproj"
             },
-            "D:\\Progects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
-              "projectPath": "D:\\Progects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj"
+            "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj": {
+              "projectPath": "C:\\MyProgects\\ZooStore\\ZooStoreDataAccess\\ZooStore.DataAccess.csproj"
             }
           }
         }

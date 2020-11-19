@@ -7,6 +7,6 @@ namespace ZooStore.DataAccess
 {
     public interface IRepository
     {
-        public List<object> Get<TKey>(TKey key);
+        IEnumerable<TEntity> Get<TEntity>(TEntity key);
     }
 }

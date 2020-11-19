@@ -14,24 +14,18 @@ namespace ZooStore.DataAccess
         {
             var options = new DbContextOptionsBuilder<ZooStoreContext>().UseInMemoryDatabase(databaseName: "ZooStore").Options;
             _context = new ZooStoreContext(options);
+            RepositoryHelper helper = new RepositoryHelper(_context);
         }
 
-        public List<object> Get<TKey>(TKey key)
+        public IEnumerable<TEntity> Get<TEntity>(TEntity key)
         {
-            List<object> result = new List<object>();
             switch (key)
             {
-                case FishEntity f:
-                    var fishList = _context.Fish.ToListAsync().Result;
-                    foreach (var fish in fishList)
-                    {
-                        result.Add(fish);
-                    }
-                    break;
+                case FishEntity fe:
+                    return (IEnumerable<TEntity>)_context.Fish.ToListAsync<FishEntity>();
                 default:
-                    throw new InvalidOperationException();
+                    return null;
             }
-            return result;
         }
     }
 }
