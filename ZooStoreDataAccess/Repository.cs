@@ -18,20 +18,23 @@ namespace ZooStore.DataAccess
             RepositoryHelper helper = new RepositoryHelper(_context);
         }
 
-        public IEnumerable<TEntity> Get<TEntity>(TEntity key)
+        public IEnumerable<AnimalBase> GetAnimals()
         {
-            switch (key)
-            {
-                case FishEntity fe:
-                    return (IEnumerable<TEntity>)_context.Fish.ToListAsync<FishEntity>();
-                default:
-                    return null;
-            }
+            return _context.Animals;
         }
 
         public IEnumerable<AnimalBase> GetFish()
         {
-            return _context.Fish.ToList();
+            List<AnimalBase> result = new List<AnimalBase>();
+
+            foreach (var fish in _context.Animals)
+            {
+                if (fish is FishEntity)
+                {
+                    result.Add(fish);
+                }
+            }
+            return result;
         }
     }
 }

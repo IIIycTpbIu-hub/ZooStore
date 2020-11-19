@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooStore.Domain.Entities
 {
-    enum ParrotSize
+    public enum ParrotSize
     {
         Small,
         Medium,
@@ -15,6 +15,6 @@ namespace ZooStore.Domain.Entities
     {
         public double Wingspan { get; set; }
         public bool Speaking { get; set; }
-        public int Size { get; set; }
+        public ParrotSize Size { get; set; }
     }
 }

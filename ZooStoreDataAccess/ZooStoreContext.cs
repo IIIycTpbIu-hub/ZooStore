@@ -13,8 +13,6 @@ namespace ZooStore.DataAccess
 
         }
 
-        public DbSet<FishEntity> Fish { get; set; }
-        public DbSet<ParrotEntity> Parrots { get; set; }
-        public DbSet<SnakeEntity> Snakes { get; set; }
+        public DbSet<AnimalBase> Animals { get; set; }
     }
 }
