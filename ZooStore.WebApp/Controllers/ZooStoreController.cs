@@ -6,6 +6,8 @@ using ZooStore.Domain.DTO;
 using ZooStore.Domain.Entities;
 using ZooStore.Story.Animals;
 using ZooStore.Story.Fish;
+using ZooStore.Story.Parrot;
+using ZooStore.Story.Snake;
 
 namespace ZooStore.WebApp.Controllers
 {
@@ -37,6 +39,25 @@ namespace ZooStore.WebApp.Controllers
             var story = new GetAnimalsStory(_repository);
             var result = story.Execute(new GetAnimalsStoryContext()).ToList();
             return result;
+        }
+
+        [HttpGet]
+        [Route("ZooStore")]
+        [Route("ZooStore/GetParrots")]
+        public IEnumerable<AnimalBase> GetParrots()
+        {
+            var story = new GetParrotsListStory(_repository);
+            return story.Execute(new GetParrotsListStoryContext());
+        }
+
+        [HttpGet]
+        [Route("ZooStore")]
+        [Route("ZooStore/GetSnakes")]
+        public IEnumerable<AnimalBase> GetSnakes()
+        {
+            var story = new GetSnakeListStory(_repository);
+            return story.Execute(new GetSnakeListStoryContext());
+
         }
     }
 }

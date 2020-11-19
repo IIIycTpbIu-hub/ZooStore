@@ -15,7 +15,7 @@ namespace ZooStore.Story.Fish
         }
         public IEnumerable<AnimalBase> Execute(GetFishListStoryContext context) 
         {
-            return _repository.GetFish();
+            return _repository.GetAnimalByEnitiy<FishEntity>();
         }
     }
 }

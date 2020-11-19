@@ -5,6 +5,8 @@ using ZooStore.Domain.Entities;
 using ZooStore.Story;
 using ZooStore.Story.Animals;
 using ZooStore.Story.Fish;
+using ZooStore.Story.Parrot;
+using ZooStore.Story.Snake;
 
 namespace ZooStore.WebApp
 {
@@ -12,9 +14,11 @@ namespace ZooStore.WebApp
     {
         public static void Config(IServiceCollection services)
         {
-            services.AddTransient<IRepository, Repository>();
+            services.AddSingleton<IRepository, Repository>();
             services.AddTransient<IStory<GetFishListStoryContext, IEnumerable<AnimalBase>>, GetFishListStory>();
             services.AddTransient<IStory<GetAnimalsStoryContext, IEnumerable<AnimalBase>>, GetAnimalsStory>();
+            services.AddTransient<IStory<GetParrotsListStoryContext, IEnumerable<AnimalBase>>, GetParrotsListStory>();
+            services.AddTransient<IStory<GetSnakeListStoryContext, IEnumerable<AnimalBase>>, GetSnakeListStory>();
         }
     }
 }
