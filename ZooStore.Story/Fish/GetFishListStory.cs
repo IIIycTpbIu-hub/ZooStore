@@ -1,13 +1,11 @@
-﻿using System;
-using System.Threading.Tasks;
-using ZooStore.Domain.Entities;
+﻿using ZooStore.Domain.Entities;
 using ZooStore.DataAccess;
 using System.Collections.Generic;
 using ZooStore.Domain.DTO;
 
 namespace ZooStore.Story.Fish
 {
-    public class GetFishListStory : IStory<GetFishListStoryContext, FishDto>
+    public class GetFishListStory : IStory<GetFishListStoryContext, IEnumerable<AnimalBase>>
     {
         IRepository _repository;
 
@@ -15,10 +13,9 @@ namespace ZooStore.Story.Fish
         {
             _repository = repository;
         }
-        public FishDto Execute(GetFishListStoryContext context) 
+        public IEnumerable<AnimalBase> Execute(GetFishListStoryContext context) 
         {
-            var fish = _repository.Get<FishEntity>(new FishEntity());
-            return new FishDto() { FishList = fish as List<FishEntity>};
+            return _repository.GetFish();
         }
     }
 }

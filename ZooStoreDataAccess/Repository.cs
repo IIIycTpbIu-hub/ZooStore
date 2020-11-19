@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using ZooStore.Domain.Entities;
 
 namespace ZooStore.DataAccess
@@ -26,6 +27,11 @@ namespace ZooStore.DataAccess
                 default:
                     return null;
             }
+        }
+
+        public IEnumerable<AnimalBase> GetFish()
+        {
+            return _context.Fish.ToList();
         }
     }
 }

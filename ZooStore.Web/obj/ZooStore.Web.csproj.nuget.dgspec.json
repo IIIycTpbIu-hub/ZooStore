@@ -159,6 +159,10 @@
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             }
           },
           "imports": [

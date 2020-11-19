@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc;
 using ZooStore.DataAccess;
 using ZooStore.Domain.DTO;
+using ZooStore.Domain.Entities;
 using ZooStore.Story.Fish;
 
 namespace ZooStore.WebApp.Controllers
@@ -16,10 +19,13 @@ namespace ZooStore.WebApp.Controllers
         }
 
         [HttpGet]
-        public ActionResult<FishDto> GetFish()
+        [Route("ZooStore")]
+        [Route("ZooStore/GetFish")]
+        public ActionResult<IEnumerable<AnimalBase>> GetFish()
         {
             var story = new GetFishListStory(_repository);
-            return story.Execute(new GetFishListStoryContext());
+            var result = story.Execute(new GetFishListStoryContext()).ToList();
+            return result;
         }
     }
 }
