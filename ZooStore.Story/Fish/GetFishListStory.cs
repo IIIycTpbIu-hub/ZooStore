@@ -1,7 +1,6 @@
 ﻿using ZooStore.Domain.Entities;
 using ZooStore.DataAccess;
 using System.Collections.Generic;
-using ZooStore.Domain.DTO;
 
 namespace ZooStore.Story.Fish
 {
