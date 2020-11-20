@@ -12,6 +12,7 @@ using ZooStore.Story.Snake;
 namespace ZooStore.WebApp.Controllers
 {
     [ApiController]
+    [Route("[controller]/[action]")]
     public class ZooStoreController : Controller
     {
         private readonly IRepository _repository;
@@ -22,8 +23,6 @@ namespace ZooStore.WebApp.Controllers
         }
 
         [HttpGet]
-        [Route("ZooStore")]
-        [Route("ZooStore/GetFish")]
         public IEnumerable<FishEntity> GetFish()
         {
             var story = new GetFishListStory(_repository);
@@ -31,8 +30,6 @@ namespace ZooStore.WebApp.Controllers
         }
 
         [HttpGet]
-        [Route("ZooStore")]
-        [Route("ZooStore/GetAnimals")]
         public IEnumerable<AnimalBase> GetAnimals()
         {
             var story = new GetAnimalsStory(_repository);
@@ -41,8 +38,6 @@ namespace ZooStore.WebApp.Controllers
         }
 
         [HttpGet]
-        [Route("ZooStore")]
-        [Route("ZooStore/GetParrots")]
         public IEnumerable<ParrotEntity> GetParrots()
         {
             var story = new GetParrotsListStory(_repository);
@@ -50,8 +45,6 @@ namespace ZooStore.WebApp.Controllers
         }
 
         [HttpGet]
-        [Route("ZooStore")]
-        [Route("ZooStore/GetSnakes")]
         public IEnumerable<SnakeEntity> GetSnakes()
         {
             var story = new GetSnakeListStory(_repository);
