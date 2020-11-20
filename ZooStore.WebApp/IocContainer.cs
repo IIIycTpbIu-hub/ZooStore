@@ -15,10 +15,10 @@ namespace ZooStore.WebApp
         public static void Config(IServiceCollection services)
         {
             services.AddSingleton<IRepository, Repository>();
-            services.AddTransient<IStory<GetFishListStoryContext, IEnumerable<AnimalBase>>, GetFishListStory>();
+            services.AddTransient<IStory<GetFishListStoryContext, IEnumerable<FishEntity>>, GetFishListStory>();
             services.AddTransient<IStory<GetAnimalsStoryContext, IEnumerable<AnimalBase>>, GetAnimalsStory>();
-            services.AddTransient<IStory<GetParrotsListStoryContext, IEnumerable<AnimalBase>>, GetParrotsListStory>();
-            services.AddTransient<IStory<GetSnakeListStoryContext, IEnumerable<AnimalBase>>, GetSnakeListStory>();
+            services.AddTransient<IStory<GetParrotsListStoryContext, IEnumerable<ParrotEntity>>, GetParrotsListStory>();
+            services.AddTransient<IStory<GetSnakeListStoryContext, IEnumerable<SnakeEntity>>, GetSnakeListStory>();
         }
     }
 }

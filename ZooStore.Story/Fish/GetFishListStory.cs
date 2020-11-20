@@ -5,7 +5,7 @@ using ZooStore.Domain.DTO;
 
 namespace ZooStore.Story.Fish
 {
-    public class GetFishListStory : IStory<GetFishListStoryContext, IEnumerable<AnimalBase>>
+    public class GetFishListStory : IStory<GetFishListStoryContext, IEnumerable<FishEntity>>
     {
         IRepository _repository;
 
@@ -13,9 +13,10 @@ namespace ZooStore.Story.Fish
         {
             _repository = repository;
         }
-        public IEnumerable<AnimalBase> Execute(GetFishListStoryContext context) 
+        public IEnumerable<FishEntity> Execute(GetFishListStoryContext context) 
         {
-            return _repository.GetAnimalByEnitiy<FishEntity>();
+            var result = _repository.GetAnimalByEnitiy<FishEntity>();
+            return result;
         }
     }
 }

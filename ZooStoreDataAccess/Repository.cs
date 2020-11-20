@@ -23,15 +23,15 @@ namespace ZooStore.DataAccess
             return _context.Animals;
         }
 
-        public IEnumerable<AnimalBase> GetAnimalByEnitiy<TEnimalEntity>() where TEnimalEntity : class
+        public IEnumerable<TEnimalEntity> GetAnimalByEnitiy<TEnimalEntity>() where TEnimalEntity : AnimalBase
         {
-            List<AnimalBase> result = new List<AnimalBase>();
+            List<TEnimalEntity> result = new List<TEnimalEntity>();
 
             foreach (var animal in _context.Animals)
             {
                 if(animal is TEnimalEntity)
                 {
-                    result.Add(animal);
+                    result.Add((TEnimalEntity)animal);
                 }
             }
             return result;

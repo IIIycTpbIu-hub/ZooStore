@@ -24,11 +24,10 @@ namespace ZooStore.WebApp.Controllers
         [HttpGet]
         [Route("ZooStore")]
         [Route("ZooStore/GetFish")]
-        public IEnumerable<AnimalBase> GetFish()
+        public IEnumerable<FishEntity> GetFish()
         {
             var story = new GetFishListStory(_repository);
-            var result = story.Execute(new GetFishListStoryContext());
-            return result;
+            return story.Execute(new GetFishListStoryContext());
         }
 
         [HttpGet]
@@ -44,7 +43,7 @@ namespace ZooStore.WebApp.Controllers
         [HttpGet]
         [Route("ZooStore")]
         [Route("ZooStore/GetParrots")]
-        public IEnumerable<AnimalBase> GetParrots()
+        public IEnumerable<ParrotEntity> GetParrots()
         {
             var story = new GetParrotsListStory(_repository);
             return story.Execute(new GetParrotsListStoryContext());
@@ -53,7 +52,7 @@ namespace ZooStore.WebApp.Controllers
         [HttpGet]
         [Route("ZooStore")]
         [Route("ZooStore/GetSnakes")]
-        public IEnumerable<AnimalBase> GetSnakes()
+        public IEnumerable<SnakeEntity> GetSnakes()
         {
             var story = new GetSnakeListStory(_repository);
             return story.Execute(new GetSnakeListStoryContext());

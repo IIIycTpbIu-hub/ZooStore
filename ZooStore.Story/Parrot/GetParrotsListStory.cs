@@ -6,7 +6,7 @@ using ZooStore.Domain.Entities;
 
 namespace ZooStore.Story.Parrot
 {
-    public class GetParrotsListStory : IStory<GetParrotsListStoryContext, IEnumerable<AnimalBase>>
+    public class GetParrotsListStory : IStory<GetParrotsListStoryContext, IEnumerable<ParrotEntity>>
     {
         IRepository _repository;
 
@@ -15,7 +15,7 @@ namespace ZooStore.Story.Parrot
             _repository = repository;
         }
 
-        public IEnumerable<AnimalBase> Execute(GetParrotsListStoryContext context)
+        public IEnumerable<ParrotEntity> Execute(GetParrotsListStoryContext context)
         {
             return _repository.GetAnimalByEnitiy<ParrotEntity>();
         }

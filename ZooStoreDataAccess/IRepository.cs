@@ -9,6 +9,6 @@ namespace ZooStore.DataAccess
     public interface IRepository
     {
         IEnumerable<AnimalBase> GetAnimals();
-        IEnumerable<AnimalBase> GetAnimalByEnitiy<TEnimalEntity>() where TEnimalEntity : class;
+        IEnumerable<TEnimalEntity> GetAnimalByEnitiy<TEnimalEntity>() where TEnimalEntity : AnimalBase;
     }
 }
